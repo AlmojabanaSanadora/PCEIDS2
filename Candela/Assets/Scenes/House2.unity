@@ -12761,6 +12761,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1222976878221459127, guid: 6652c6bef05cf634499c41212a4da1f4, type: 3}
+      propertyPath: jumpForce
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222976878221459127, guid: 6652c6bef05cf634499c41212a4da1f4, type: 3}
+      propertyPath: fallPreventionHeight
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3546716442373351740, guid: 6652c6bef05cf634499c41212a4da1f4, type: 3}
       propertyPath: m_Name
       value: Player

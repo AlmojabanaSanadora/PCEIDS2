@@ -13,6 +13,7 @@ public class InputManager : MonoBehaviour
     public float moveAmount;
 
     public bool shiftInput;
+    public bool spaceInput;
 
     private void Awake()
     {
@@ -29,6 +30,8 @@ public class InputManager : MonoBehaviour
 
             playerControls.PlayerActions.Shift.performed += i => shiftInput = true;
             playerControls.PlayerActions.Shift.canceled += i => shiftInput = false;
+
+            playerControls.PlayerActions.Space.started += i =>  HandleJump();
         }
         playerControls.Enable();
     }
@@ -38,6 +41,17 @@ public class InputManager : MonoBehaviour
         playerControls.Disable();
     }
 
+    public void HandleAllInputs()
+    {
+        HandleMovementInput();
+        HandleRunningInput();
+
+    }
+
+    private void HandleJump()
+    {
+        playerMovement.HandleJump();
+    }
     private void HandleMovementInput()
     {
         verticalInput = movementInput.y;
@@ -46,12 +60,6 @@ public class InputManager : MonoBehaviour
         moveAmount = Mathf.Clamp01(Mathf.Abs(horizontalInput) + Mathf.Abs(verticalInput));
 
         animatorManager.UpdateAnimatorValue(0, moveAmount, playerMovement.isRunning);
-    }
-
-    public void HandleAllInputs ()
-    {
-        HandleMovementInput();
-        HandleRunningInput();
     }
 
     private void HandleRunningInput()
