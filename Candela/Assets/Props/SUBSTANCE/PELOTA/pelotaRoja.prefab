@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5952654113618321313}
   - component: {fileID: 1697861895448547956}
   - component: {fileID: -9060334816575461204}
+  - component: {fileID: 5863397528469809077}
   m_Layer: 0
   m_Name: pelotaRoja
   m_TagString: Untagged
@@ -136,3 +137,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5863397528469809077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668842704409313698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8704a61b0f1e58241b73124aa55ada0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  fuerza: 10
+  minVelocidad: 1.5
