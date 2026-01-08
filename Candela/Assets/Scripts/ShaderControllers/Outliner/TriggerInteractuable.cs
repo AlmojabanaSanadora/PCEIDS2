@@ -14,6 +14,7 @@ public class TriggerInteractuable : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            Debug.Log("hola");
             ChangeLayer("OutlineObjects");
         }
     }
