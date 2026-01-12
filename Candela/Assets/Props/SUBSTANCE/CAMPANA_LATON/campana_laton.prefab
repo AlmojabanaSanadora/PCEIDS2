@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -6130766725910178583}
   m_Layer: 0
   m_Name: campana_laton
-  m_TagString: Untagged
+  m_TagString: Movible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

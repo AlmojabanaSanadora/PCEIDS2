@@ -8,6 +8,7 @@ public class PlayerManager : MonoBehaviour
 
     public bool isInteracting;
     public bool isJumping;
+    public bool isAnimation;
 
     private void Awake()
     {
@@ -34,8 +35,16 @@ public class PlayerManager : MonoBehaviour
 
     private void LateUpdate()
     {
-        isInteracting = animator.GetBool("isInteracting");
-        isJumping = animator.GetBool("isJumping");
+        if (!isAnimation)
+        {
+            isInteracting = animator.GetBool("isInteracting");
+            isJumping = animator.GetBool("isJumping");
+        } 
+        else 
+        {
+            isInteracting = true;
+        }
+
     }
 
 
