@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2005162975260655725}
   - component: {fileID: 6781371398897450105}
   - component: {fileID: 8943591463060283202}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CAJA_REGALO1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2899243114165854935}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000037748947, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 80.84, y: 1.0083942, z: -4.47}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0

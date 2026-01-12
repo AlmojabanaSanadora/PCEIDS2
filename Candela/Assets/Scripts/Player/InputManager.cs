@@ -5,6 +5,7 @@ public class InputManager : MonoBehaviour
     PlayerControls playerControls;
     AnimatorManager animatorManager;
     PlayerMovement playerMovement;
+    PlayerManager playerManager;
 
     public Vector2 movementInput;
 
@@ -19,6 +20,7 @@ public class InputManager : MonoBehaviour
     {
         animatorManager = GetComponent<AnimatorManager>();
         playerMovement = GetComponent<PlayerMovement>();
+        playerManager = GetComponent<PlayerManager>();
     }
 
     private void OnEnable()
@@ -56,6 +58,12 @@ public class InputManager : MonoBehaviour
     {
         verticalInput = movementInput.y;
         horizontalInput = movementInput.x;
+
+        if (playerManager.isAnimation)
+        {
+            verticalInput = 0;
+            horizontalInput = 0;
+        }
 
         moveAmount = Mathf.Clamp01(Mathf.Abs(horizontalInput) + Mathf.Abs(verticalInput));
 

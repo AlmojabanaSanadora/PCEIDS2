@@ -55,8 +55,16 @@ public class TallerManager : MonoBehaviour
         triggerTallerAZona2.SetActive(true);
         closePuertasCorruptas();
 
-        yield return new WaitForSeconds(timeToWait);
-        RenderSettings.fogDensity = 0.04f;
+        float timer = 0f;
+        float valorInicialFog = 0.09f;
+        float valorFinalFog = 0.04f;
+        while (timer <= timeToWait)
+        {
+            timer+= Time.deltaTime;
+            RenderSettings.fogDensity = Mathf.Lerp(valorInicialFog, valorFinalFog, timer / timeToWait);
+            yield return null;
+        }
+        RenderSettings.fogDensity = valorFinalFog;
         playerManager.isAnimation = false;
     }
 
@@ -69,8 +77,16 @@ public class TallerManager : MonoBehaviour
         triggerTallerAZona2.SetActive(false);
         closePuertasCorruptas();
 
-        yield return new WaitForSeconds(timeToWait);
-        RenderSettings.fogDensity = 0.09f;
+        float timer = 0f;
+        float valorInicialFog = 0.04f;
+        float valorFinalFog = 0.09f;
+        while (timer <= timeToWait)
+        {
+            timer += Time.deltaTime;
+            RenderSettings.fogDensity = Mathf.Lerp(valorInicialFog, valorFinalFog, timer / timeToWait);
+            yield return null;
+        }
+        RenderSettings.fogDensity = valorFinalFog;
         playerManager.isAnimation = false;
         changeCamera(camZona3);
     }

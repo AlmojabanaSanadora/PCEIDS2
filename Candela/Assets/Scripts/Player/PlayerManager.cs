@@ -35,16 +35,8 @@ public class PlayerManager : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (!isAnimation)
-        {
-            isInteracting = animator.GetBool("isInteracting");
-            isJumping = animator.GetBool("isJumping");
-        } 
-        else 
-        {
-            isInteracting = true;
-        }
-
+        isInteracting = animator.GetBool("isInteracting");
+        isJumping = animator.GetBool("isJumping");
     }
 
 
