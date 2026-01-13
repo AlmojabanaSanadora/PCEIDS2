@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2627629472771036399}
   - component: {fileID: 195913167213569126}
   - component: {fileID: 1246492269690950200}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "caja3peque\xF1aV3"
   m_TagString: Untagged
   m_Icon: {fileID: 0}

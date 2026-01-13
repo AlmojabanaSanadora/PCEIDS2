@@ -1,3 +1,4 @@
+using System.Drawing;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +14,7 @@ public class SpiritPurified : MonoBehaviour
 
     public ParticleSystem[] particleSystems;
 
-    public Color[] colors;
+    public UnityEngine.Color[] colors;
 
     private bool isPurified = false;
     public GameObject purificationProgressUI;
@@ -72,14 +73,13 @@ public class SpiritPurified : MonoBehaviour
 
     public void OpenGate()
     {
+        spiritIn.GetComponent<Renderer>().material.color = colors[2];
+        spiritOut.GetComponent<Renderer>().material.color = colors[3];
+        particleSystems[1].Play();
+        particleSystems[0].Stop();
+        isPurified = true;
         if (gate != null)
-        {
-            spiritIn.GetComponent<Renderer>().material.color = colors[2];
-            spiritOut.GetComponent<Renderer>().material.color = colors[3];
-            particleSystems[1].Play();
-            particleSystems[0].Stop();
-            isPurified = true;
-
+        {            
             gate.transform.GetChild(0).gameObject.SetActive(false);
             gate.transform.GetChild(1).GetComponent<ParticleSystem>().Stop();
         }

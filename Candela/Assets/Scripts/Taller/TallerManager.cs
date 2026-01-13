@@ -56,8 +56,8 @@ public class TallerManager : MonoBehaviour
         closePuertasCorruptas();
 
         float timer = 0f;
-        float valorInicialFog = 0.09f;
-        float valorFinalFog = 0.04f;
+        float valorInicialFog = 0.02f;
+        float valorFinalFog = 0f;
         while (timer <= timeToWait)
         {
             timer+= Time.deltaTime;
@@ -78,8 +78,8 @@ public class TallerManager : MonoBehaviour
         closePuertasCorruptas();
 
         float timer = 0f;
-        float valorInicialFog = 0.04f;
-        float valorFinalFog = 0.09f;
+        float valorInicialFog = 0f;
+        float valorFinalFog = 0.02f;
         while (timer <= timeToWait)
         {
             timer += Time.deltaTime;

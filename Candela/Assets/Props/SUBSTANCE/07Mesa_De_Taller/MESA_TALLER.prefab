@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6581049032725908925}
   - component: {fileID: 8604929204524956312}
   - component: {fileID: 3934610900299696911}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MESA_TALLER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
