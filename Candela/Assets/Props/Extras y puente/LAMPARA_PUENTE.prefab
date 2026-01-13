@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 6513461128009385410}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.153, y: -0, z: 0}
+  m_LocalPosition: {x: 0.087, y: -0, z: 0.006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42,9 +42,9 @@ Light:
   m_GameObject: {fileID: 6513461128009385410}
   m_Enabled: 1
   serializedVersion: 11
-  m_Type: 0
+  m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 46.68
+  m_Intensity: 50
   m_Range: 27.133945
   m_SpotAngle: 179
   m_InnerSpotAngle: 149.16667
@@ -184,7 +184,7 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 128
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 5aa57cd77dc735045bf054bdb2ffcc4b, type: 2}
