@@ -5,6 +5,7 @@ public class SpiritManager : MonoBehaviour
 {
     public GameObject player;
     public NavMeshAgent agent;
+    private SpiritPurified gateOpener;
 
     public float projectionDistance = 5f;
     public float runDistance = 10f;
@@ -20,6 +21,7 @@ public class SpiritManager : MonoBehaviour
         {
             enabled = false;
         }
+        gateOpener = GetComponent<SpiritPurified>();
         nextRepathTime = Time.time;
     }
 
@@ -29,6 +31,7 @@ public class SpiritManager : MonoBehaviour
 
         if (distanceToPlayer >= runDistance)
         {
+            gateOpener.StopPurified();
             animator.SetBool("isRunning", false);
             if (agent.hasPath)
             {
@@ -38,7 +41,7 @@ public class SpiritManager : MonoBehaviour
         }
 
         animator.SetBool("isRunning", true);
-
+        gateOpener.Purified();
         if (Time.time >= nextRepathTime)
         {
             Vector3 directionAwayFromPlayer = transform.position - player.transform.position;

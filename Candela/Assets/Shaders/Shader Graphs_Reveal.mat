@@ -45,11 +45,11 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Test: 0
-    - _fadeDistance: 2.5
+    - _fadeDistance: 5
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 0}
     - _baseColor: {r: 1, g: 0, b: 0, a: 0}
-    - _lightPosition: {r: 0, g: 0, b: 0, a: 0}
+    - _lightPosition: {r: 85, g: 8.74, b: -6, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &3020409694508170964

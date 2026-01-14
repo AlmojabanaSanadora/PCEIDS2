@@ -7,6 +7,8 @@ public class PlayerManager : MonoBehaviour
     Animator animator;
 
     public bool isInteracting;
+    public bool isJumping;
+    public bool isAnimation;
 
     public bool inZone = false;
 
@@ -36,6 +38,7 @@ public class PlayerManager : MonoBehaviour
     private void LateUpdate()
     {
         isInteracting = animator.GetBool("isInteracting");
+        isJumping = animator.GetBool("isJumping");
     }
 
 
