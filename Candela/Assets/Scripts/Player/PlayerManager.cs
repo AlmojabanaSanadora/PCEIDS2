@@ -8,6 +8,8 @@ public class PlayerManager : MonoBehaviour
 
     public bool isInteracting;
 
+    public bool inZone = false;
+
     private void Awake()
     {
         inputManager = GetComponent<InputManager>();

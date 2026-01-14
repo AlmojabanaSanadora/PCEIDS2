@@ -2,18 +2,23 @@ using UnityEngine;
 
 public class InLight : MonoBehaviour
 {
-    bool inZone = false;
+    public PlayerManager player;
+
+    private void Update() {
+        Debug.Log("en zona?: " + player.inZone);    
+    }
+
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Player"))
         {
-            inZone = true;
+            player.inZone = true;
         }
     }
 
     private void OnTriggerExit(Collider other) {
         if (other.CompareTag("Player"))
         {
-            inZone = false;
+            player.inZone = false;
         }
     }
 }
