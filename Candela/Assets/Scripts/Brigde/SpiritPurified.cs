@@ -34,7 +34,7 @@ public class SpiritPurified : MonoBehaviour
         {
             if (purificationTime <= 0f)
             {
-                OpenGate();
+                CompletePurification();
             }
             if (purificationTime <= maxPurificationTime)
             {
@@ -71,7 +71,7 @@ public class SpiritPurified : MonoBehaviour
             purificationProgressUI.SetActive(false);
     }
 
-    public void OpenGate()
+    public void CompletePurification()
     {
         spiritIn.GetComponent<Renderer>().material.color = colors[2];
         spiritOut.GetComponent<Renderer>().material.color = colors[3];
@@ -83,5 +83,6 @@ public class SpiritPurified : MonoBehaviour
             gate.transform.GetChild(0).gameObject.SetActive(false);
             gate.transform.GetChild(1).GetComponent<ParticleSystem>().Stop();
         }
+        PlayerStats.instance.AddSpirit();
     }
 }
