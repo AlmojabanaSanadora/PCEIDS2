@@ -20036,7 +20036,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &749457074
 RectTransform:
@@ -20251,6 +20251,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3747569361512541616, guid: 690ae49dc190c5f44b113565d12dbee0, type: 3}
   m_PrefabInstance: {fileID: 681882515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &782849059 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5049506485073475035, guid: 011ff54ed49bee3409f89c427117329b, type: 3}
+  m_PrefabInstance: {fileID: 825309110}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &783243408
 PrefabInstance:
@@ -21448,13 +21453,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5049506485073475035, guid: 011ff54ed49bee3409f89c427117329b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 825309112}
   m_SourcePrefab: {fileID: 100100000, guid: 011ff54ed49bee3409f89c427117329b, type: 3}
 --- !u!4 &825309111 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7707463160424063998, guid: 011ff54ed49bee3409f89c427117329b, type: 3}
   m_PrefabInstance: {fileID: 825309110}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &825309112
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782849059}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.346257, y: 4.222357, z: 3.4353623}
+  m_Center: {x: -0.28943026, y: 0.7809639, z: 0.2277267}
 --- !u!1 &826108166
 GameObject:
   m_ObjectHideFlags: 0
@@ -62425,7 +62454,6 @@ SceneRoots:
   - {fileID: 51360668}
   - {fileID: 1313871004}
   - {fileID: 900898463}
-  - {fileID: 749457074}
   - {fileID: 489737135}
   - {fileID: 1054567085}
   - {fileID: 142213757}
@@ -62436,3 +62464,4 @@ SceneRoots:
   - {fileID: 8449742797114826846}
   - {fileID: 1628463377}
   - {fileID: 599123070}
+  - {fileID: 749457074}
